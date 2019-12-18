@@ -1,1 +1,48 @@
 /* Denna fil skall innehålla din CSS kod */
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    grid-column-gap: 3px;
+    grid-template-areas:
+    'hd hd hd hd'
+    'na na na na'
+    'mn mn mn mn'
+    'mn mn mn mn'
+    'ft ft ft ft'
+}
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    grid-area: hd;
+    background-color: #577E59;
+    text-align: center;
+}
+
+nav {
+    grid-area:na;
+    background-color: #2E402F;
+
+}
+
+article, h5 {
+    display: inline-block;
+}
+
+
+main {
+    grid-area: mn;
+    background-color: white;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #343434;
+    color: white;
+}
