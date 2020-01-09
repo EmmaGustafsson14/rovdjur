@@ -10,7 +10,6 @@
     'hd hd hd hd'
     'na na na na'
     'mn mn mn mn'
-    'mn mn mn mn'
     'ft ft ft ft'
 }
 
@@ -21,28 +20,91 @@ body {
 
 header {
     grid-area: hd;
-    background-color: #577E59;
+    background-image: linear-gradient(lightblue, white);
     text-align: center;
+    
 }
 
 nav {
     grid-area:na;
-    background-color: #2E402F;
-
+    margin: 0px;
+    height: 60px;
+    background-color: rgb(39, 39, 39);
 }
 
-article, h5 {
+input {
+    position: absolute;
+    position: relative;
+    right: -665px;
+    border: 0px;
+    height: 25px;
+    width: 135px;
+    
+
+    
+    
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: white;
+}
+
+
+article {
     display: inline-block;
 }
-
 
 main {
     grid-area: mn;
     background-color: white;
+    text-align-last: center;
+    
+}
+
+.noline {
+    text-decoration: none;
+
+}
+
+
+
+
+.brodtext {
+
+    text-align-last: left;
+    padding: 25px 300px 0px 300px;
+
+
+
+}
+
+#rovdjur {
+height: 188px;
+width: 455px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+#bear {
+height: 380px;
+width: 620px;
+margin-left: auto;
+margin-right: auto;
+
+
 }
 
 footer {
     grid-area: ft;
     background-color: #343434;
     color: white;
+    text-align-last: left;
+    font-size: 14px;
+
 }
